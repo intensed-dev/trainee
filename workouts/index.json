@@ -1,0 +1,7 @@
+{
+  "workouts": [
+    { "file": "full-body.json" },
+    { "file": "mobility.json" },
+    { "file": "quick-core.json" }
+  ]
+}
