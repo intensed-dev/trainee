@@ -1,0 +1,142 @@
+{
+  "id": "mommy-tuesday",
+  "name": "Mommy – Dienstag",
+  "description": "Rücken, Arme & Core-Stabilität",
+  "icon": "activity",
+  "exercises": [
+    {
+      "name": "Rudergerät zum Aufwärmen",
+      "instruction": "5 Minuten bei leichtem Tempo.",
+      "duration": 300,
+      "rest": 0
+    },
+    {
+      "name": "Latzug zur Brust – Satz 1/3",
+      "instruction": "12 Wiederholungen; zur oberen Brust ziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Latzug zur Brust – Satz 2/3",
+      "instruction": "12 Wiederholungen; zur oberen Brust ziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Latzug zur Brust – Satz 3/3",
+      "instruction": "12 Wiederholungen; zur oberen Brust ziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Rudermaschine – Satz 1/3",
+      "instruction": "12 Wiederholungen; Schultern nicht hochziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Rudermaschine – Satz 2/3",
+      "instruction": "12 Wiederholungen; Schultern nicht hochziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Rudermaschine – Satz 3/3",
+      "instruction": "12 Wiederholungen; Schultern nicht hochziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Brustpresse – Satz 1/2",
+      "instruction": "12 Wiederholungen; kontrolliert drücken.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Brustpresse – Satz 2/2",
+      "instruction": "12 Wiederholungen; kontrolliert drücken.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Schulterdrückmaschine – Satz 1/2",
+      "instruction": "12 Wiederholungen; leicht starten.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Schulterdrückmaschine – Satz 2/2",
+      "instruction": "12 Wiederholungen; leicht starten.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bizepsmaschine – Satz 1/2",
+      "instruction": "12 Wiederholungen; Oberarme ruhig halten.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bizepsmaschine – Satz 2/2",
+      "instruction": "12 Wiederholungen; Oberarme ruhig halten.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Trizepsmaschine – Satz 1/2",
+      "instruction": "12 Wiederholungen. Alternativ Trizeps-Dip-Maschine mit passender Unterstützung.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Trizepsmaschine – Satz 2/2",
+      "instruction": "12 Wiederholungen. Alternativ Trizeps-Dip-Maschine mit passender Unterstützung.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bird Dog – Satz 1/2",
+      "instruction": "10 Wiederholungen je Seite; Becken ruhig halten.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bird Dog – Satz 2/2",
+      "instruction": "10 Wiederholungen je Seite; Becken ruhig halten.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 3,
+      "rest": 60
+    }
+  ]
+}
