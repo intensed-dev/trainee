@@ -1,0 +1,13 @@
+{
+  "id": "quick-core",
+  "name": "Core Focus",
+  "description": "Kurzes Training für die Körpermitte",
+  "icon": "zap",
+  "exercises": [
+    { "name": "Dead Bug", "instruction": "Strecke Arm und gegenüberliegendes Bein kontrolliert.", "duration": 35, "rest": 20 },
+    { "name": "Bird Dog", "instruction": "Bleibe stabil und bewege dich langsam.", "duration": 35, "rest": 20 },
+    { "name": "Knee Plank", "instruction": "Halte den Rumpf stabil und atme ruhig weiter.", "duration": 25, "rest": 20 },
+    { "name": "Glute Bridge", "instruction": "Hebe die Hüfte kontrolliert an.", "duration": 35, "rest": 20 },
+    { "name": "Standing March", "instruction": "Gehe locker auf der Stelle und halte die Haltung aufrecht.", "duration": 40, "rest": 0 }
+  ]
+}
