@@ -1,0 +1,15 @@
+{
+  "name": "trainee — Workout Timer",
+  "short_name": "trainee",
+  "description": "Deine Workouts. Dein Tempo.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["fullscreen", "standalone"],
+  "background_color": "#101110",
+  "theme_color": "#101110",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
