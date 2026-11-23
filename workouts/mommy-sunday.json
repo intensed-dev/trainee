@@ -1,0 +1,144 @@
+{
+  "id": "mommy-sunday",
+  "name": "Mommy – Sonntag",
+  "description": "Oberkörper & Core",
+  "icon": "activity",
+  "exercises": [
+    {
+      "name": "Rudergerät zum Aufwärmen",
+      "instruction": "5 Minuten locker.",
+      "duration": 300,
+      "rest": 0
+    },
+    {
+      "name": "Latzug – Satz 1/2",
+      "instruction": "12 Wiederholungen; kontrolliert ziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Latzug – Satz 2/2",
+      "instruction": "12 Wiederholungen; kontrolliert ziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Rudermaschine – Satz 1/2",
+      "instruction": "12 Wiederholungen; Rücken aufrecht.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Rudermaschine – Satz 2/2",
+      "instruction": "12 Wiederholungen; Rücken aufrecht.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Brustpresse – Satz 1/2",
+      "instruction": "12 Wiederholungen; leicht bis moderat.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Brustpresse – Satz 2/2",
+      "instruction": "12 Wiederholungen; leicht bis moderat.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bizepsmaschine – Satz 1/2",
+      "instruction": "12 Wiederholungen; ohne Schwung.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bizepsmaschine – Satz 2/2",
+      "instruction": "12 Wiederholungen; ohne Schwung.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Trizepsmaschine – Satz 1/2",
+      "instruction": "12 Wiederholungen. Alternativ Dip-Maschine mit Unterstützung.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Trizepsmaschine – Satz 2/2",
+      "instruction": "12 Wiederholungen. Alternativ Dip-Maschine mit Unterstützung.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bauchrotationsmaschine – Satz 1/2",
+      "instruction": "10 Wiederholungen je Seite; sehr leicht, langsam und ohne ruckartiges Drehen.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bauchrotationsmaschine – Satz 2/2",
+      "instruction": "10 Wiederholungen je Seite; sehr leicht, langsam und ohne ruckartiges Drehen.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Plank – Satz 1/2",
+      "instruction": "20–30 Sekunden; saubere Körperlinie.",
+      "duration": 25,
+      "rest": 60
+    },
+    {
+      "name": "Plank – Satz 2/2",
+      "instruction": "20–30 Sekunden; saubere Körperlinie.",
+      "duration": 25,
+      "rest": 60
+    },
+    {
+      "name": "Dead Bug – Satz 1/2",
+      "instruction": "8–10 Wiederholungen je Seite; langsam ausführen.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Dead Bug – Satz 2/2",
+      "instruction": "8–10 Wiederholungen je Seite; langsam ausführen.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Crosstrainer",
+      "instruction": "10 Minuten in angenehmem Tempo.",
+      "duration": 600,
+      "rest": 0
+    }
+  ]
+}
