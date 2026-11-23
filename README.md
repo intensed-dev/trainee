@@ -28,6 +28,14 @@ A lightweight, mobile-first workout timer built with plain HTML, CSS and JavaScr
       "instruction": "Stretch gently on both sides.",
       "duration": 40,
       "rest": 0
+    },
+    {
+      "name": "Dumbbell Curls",
+      "instruction": "Lift and lower the weights in a controlled rhythm.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 20
     }
   ]
 }
@@ -38,8 +46,11 @@ A lightweight, mobile-first workout timer built with plain HTML, CSS and JavaScr
 - `description`: optional description for future use.
 - `icon`: optional Lucide icon key.
 - `exercises`: ordered list of workout steps.
-- `duration`: exercise duration in seconds.
+- `duration`: exercise duration in seconds (for timed exercises).
 - `rest`: rest after this exercise in seconds. The final exercise's rest is ignored.
+- `type`: set to `"reps"` for a repetition-based exercise. Leave it out for a timed exercise.
+- `reps`: target repetition count for `type: "reps"`.
+- `secondsPerRep`: optional automatic cadence in seconds per repetition. When omitted, each repetition is counted manually with the large button in the player.
 - `instruction`: optional short instruction shown in the player.
 
 The workout index is a simple list:
@@ -58,6 +69,7 @@ The workout index is a simple list:
 - Responsive workout gallery
 - Fullscreen workout player
 - Exercise and rest intervals
+- Repetition exercises with manual counting or automatic cadence
 - Pause, resume, previous and next controls
 - Keyboard shortcuts: Space, Left Arrow, Right Arrow
 - Installable PWA with offline caching
