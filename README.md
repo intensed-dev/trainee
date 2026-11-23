@@ -41,7 +41,7 @@ A lightweight, mobile-first workout timer built with plain HTML, CSS and JavaScr
 - `duration`: exercise duration in seconds for timed exercises.
 - `type: "reps"`: optional; makes the exercise repetition-based instead of timer-based.
 - `reps`: target number of repetitions for a repetition-based exercise.
-- `secondsPerRep`: optional; enables automatic counting at the given seconds per repetition. Without it, the user counts each repetition manually.
+- `secondsPerRep`: optional; sets the automatic pace in seconds per repetition. Defaults to 3 seconds. Repetitions are counted down automatically; no button presses are needed.
 - `rest`: rest after this exercise in seconds. The final exercise's rest is ignored.
 - `instruction`: optional short instruction shown in the player.
 
@@ -60,7 +60,7 @@ The workout index is a simple list:
 
 - Responsive workout gallery
 - Fullscreen workout player
-- Timed exercises, manual repetition counting and optional automatic repetition cadence
+- Timed exercises and automatically paced repetition exercises with a visual breathing animation
 - Exercise and rest intervals
 - Pause, resume, previous and next controls
 - Keyboard shortcuts: Space, Left Arrow, Right Arrow
