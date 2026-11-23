@@ -1,28 +1,13 @@
 {
   "workouts": [
-    {
-      "file": "full-body.json"
-    },
-    {
-      "file": "mobility.json"
-    },
-    {
-      "file": "quick-core.json"
-    },
-    {
-      "file": "mommy-monday.json"
-    },
-    {
-      "file": "mommy-tuesday.json"
-    },
-    {
-      "file": "mommy-wednesday.json"
-    },
-    {
-      "file": "mommy-thursday.json"
-    },
-    {
-      "file": "mommy-sunday.json"
-    }
+    { "file": "full-body.json" },
+    { "file": "mobility.json" },
+    { "file": "quick-core.json" },
+    { "file": "mommy-monday.json" },
+    { "file": "mommy-tuesday.json" },
+    { "file": "mommy-wednesday.json" },
+    { "file": "mommy-thursday.json" },
+    { "file": "mommy-sunday.json" },
+    { "file": "mommy-home.json" }
   ]
 }
