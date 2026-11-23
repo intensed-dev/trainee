@@ -1,0 +1,130 @@
+{
+  "id": "mommy-wednesday",
+  "name": "Mommy – Mittwoch",
+  "description": "Ganzheitliches Bauch- & Core-Training",
+  "icon": "activity",
+  "exercises": [
+    {
+      "name": "Crosstrainer",
+      "instruction": "8 Minuten locker aufwärmen.",
+      "duration": 480,
+      "rest": 0
+    },
+    {
+      "name": "Bauchcrunchmaschine – Satz 1/3",
+      "instruction": "12–15 Wiederholungen; nicht am Kopf ziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bauchcrunchmaschine – Satz 2/3",
+      "instruction": "12–15 Wiederholungen; nicht am Kopf ziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bauchcrunchmaschine – Satz 3/3",
+      "instruction": "12–15 Wiederholungen; nicht am Kopf ziehen.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Reverse Crunch – Satz 1/2",
+      "instruction": "10–12 Wiederholungen auf der Matte; Becken kontrolliert anrollen.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Reverse Crunch – Satz 2/2",
+      "instruction": "10–12 Wiederholungen auf der Matte; Becken kontrolliert anrollen.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Dead Bug – Satz 1/3",
+      "instruction": "8–10 Wiederholungen je Seite; Rumpf stabil halten.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Dead Bug – Satz 2/3",
+      "instruction": "8–10 Wiederholungen je Seite; Rumpf stabil halten.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Dead Bug – Satz 3/3",
+      "instruction": "8–10 Wiederholungen je Seite; Rumpf stabil halten.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Unterarmstütz (Plank) – Satz 1/3",
+      "instruction": "20–30 Sekunden; Haltung sauber halten.",
+      "duration": 25,
+      "rest": 60
+    },
+    {
+      "name": "Unterarmstütz (Plank) – Satz 2/3",
+      "instruction": "20–30 Sekunden; Haltung sauber halten.",
+      "duration": 25,
+      "rest": 60
+    },
+    {
+      "name": "Unterarmstütz (Plank) – Satz 3/3",
+      "instruction": "20–30 Sekunden; Haltung sauber halten.",
+      "duration": 25,
+      "rest": 60
+    },
+    {
+      "name": "Side Plank – Satz 1/2",
+      "instruction": "15–20 Sekunden je Seite; bei Bedarf Knie absetzen.",
+      "duration": 40,
+      "rest": 60
+    },
+    {
+      "name": "Side Plank – Satz 2/2",
+      "instruction": "15–20 Sekunden je Seite; bei Bedarf Knie absetzen.",
+      "duration": 40,
+      "rest": 60
+    },
+    {
+      "name": "Rückenstrecker – Satz 1/2",
+      "instruction": "12 Wiederholungen; sanft und kontrolliert.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Rückenstrecker – Satz 2/2",
+      "instruction": "12 Wiederholungen; sanft und kontrolliert.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Rudergerät (optional)",
+      "instruction": "5 Minuten sehr locker; optional.",
+      "duration": 300,
+      "rest": 0
+    }
+  ]
+}
