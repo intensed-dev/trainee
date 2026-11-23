@@ -136,7 +136,36 @@
       $("toggle").setAttribute("aria-label",paused?"Fortsetzen":"Pause");
       lucide.createIcons();updateDisplay();lastCountdown=0;if(autostart){playTone(step.type==="rest"?520:740,0.1);if(step.type!=="reps"||step.autoCadence)runTicker();}
     }
-    function runTicker(){clearInterval(ticker);const step=steps[stepIndex];if(step?.type==="reps"&&!step.autoCadence)return;deadline=Date.now()+remaining*1000;ticker=setInterval(()=>{remaining=Math.max(0,(deadline-Date.now())/1000);if(step?.type==="reps"&&step.autoCadence){const completed=Math.min(step.reps,Math.floor((duration-remaining)/step.secondsPerRep));repsRemaining=Math.max(0,step.reps-completed);if(repsRemaining!==lastRepCount){lastRepCount=repsRemaining;animateRepCount();playTone(620,0.055);}}else{const whole=Math.ceil(remaining);if(whole<=3&&whole>0&&whole!==lastCountdown){lastCountdown=whole;playTone(whole===1?880:660,0.08);}}updateDisplay();if(remaining<=0){elapsedBefore+=duration;stepIndex++;showStep(true);}},100);}
+    function runTicker(){
+      clearInterval(ticker);
+      const step=steps[stepIndex];
+      if(!current||!step||(step.type==="reps"&&!step.autoCadence))return;
+      paused=false;
+      deadline=Date.now()+Math.max(0,remaining)*1000;
+      let completedStep=false;
+      const tick=()=>{
+        if(completedStep||!current)return;
+        remaining=Math.max(0,(deadline-Date.now())/1000);
+        if(step.type==="reps"&&step.autoCadence){
+          const completed=Math.min(step.reps,Math.floor((duration-remaining)/step.secondsPerRep));
+          repsRemaining=Math.max(0,step.reps-completed);
+          if(repsRemaining!==lastRepCount){lastRepCount=repsRemaining;animateRepCount();playTone(620,0.055);}
+        }else{
+          const whole=Math.ceil(remaining);
+          if(whole<=3&&whole>0&&whole!==lastCountdown){lastCountdown=whole;playTone(whole===1?880:660,0.08);}
+        }
+        updateDisplay();
+        if(remaining<=0){
+          completedStep=true;
+          clearInterval(ticker);
+          elapsedBefore+=duration;
+          stepIndex++;
+          showStep(true);
+        }
+      };
+      tick();
+      if(!completedStep)ticker=setInterval(tick,100);
+    }
     function animateRepCount(){$("rep-count").classList.remove("pop");void $("rep-count").offsetWidth;$("rep-count").classList.add("pop");}
     function countRep(){const step=steps[stepIndex];if(!step||step.type!=="reps"||step.autoCadence||paused||repsRemaining<=0)return;repsRemaining--;lastRepCount=repsRemaining;remaining=duration*(repsRemaining/step.reps);animateRepCount();playTone(720,0.07);updateDisplay();if(repsRemaining===0){elapsedBefore+=duration;stepIndex++;showStep(true);}}
     function updateDisplay(){
