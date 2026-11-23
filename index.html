@@ -18,7 +18,7 @@
   <style>
     :root{color-scheme:dark;--bg:#101110;--surface:#191b19;--surface-2:#222522;--line:#2b302b;--text:#f1f3ef;--muted:#929a91;--accent:#c5f36b;--accent-ink:#17200b;--radius:22px}
     *{box-sizing:border-box}html{background:var(--bg);scroll-behavior:smooth}body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font-family:"DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}button{font:inherit;color:inherit}button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.app{width:min(100%,760px);margin:0 auto;padding:calc(22px + env(safe-area-inset-top)) 20px calc(32px + env(safe-area-inset-bottom))}.topbar{height:44px;display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}.brand{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:800;letter-spacing:-.8px}.brand-mark{width:28px;height:28px;border-radius:9px;background:var(--accent);display:grid;place-items:center;color:var(--accent-ink)}.brand-mark svg{width:17px;height:17px;stroke-width:2.8}.top-note{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.02em}.section-row{display:flex;align-items:center;justify-content:space-between;margin:0 0 14px}.section-label{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.11em;text-transform:uppercase}.count{font-size:12px;color:var(--muted)}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.workout{position:relative;min-height:190px;padding:17px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);display:flex;flex-direction:column;justify-content:space-between;text-align:left;cursor:pointer;overflow:hidden;transition:border-color .18s,transform .18s,background .18s}.workout:active{transform:scale(.985)}.workout:hover{border-color:#58634d;background:#1d211b}.workout-top{display:flex;justify-content:space-between;align-items:flex-start}.workout-symbol{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:var(--surface-2);color:var(--accent)}.workout-symbol svg{width:19px;height:19px}.workout-arrow{color:var(--muted)}.workout-arrow svg{width:17px;height:17px}.workout-name{font-size:18px;line-height:1.15;font-weight:700;letter-spacing:-.55px;margin:20px 0 7px}.workout-meta{font-size:12px;color:var(--muted);display:flex;gap:7px;align-items:center}.dot{width:3px;height:3px;background:#626a60;border-radius:50%}.workout-tag{position:absolute;top:17px;right:43px;color:var(--accent);font-size:10px;font-weight:700;letter-spacing:.04em}.empty{grid-column:1/-1;border:1px dashed var(--line);border-radius:var(--radius);padding:28px;color:var(--muted);text-align:center;font-size:14px}.footer{margin-top:22px;text-align:center;color:#626a60;font-size:11px}
-    .player{position:fixed;inset:0;z-index:10;background:var(--bg);display:none;flex-direction:column;padding:calc(18px + env(safe-area-inset-top)) 24px calc(22px + env(safe-area-inset-bottom));overflow:auto}.player.open{display:flex}.player-head{width:min(100%,560px);margin:0 auto;display:flex;align-items:center;justify-content:space-between;min-height:42px}.icon-btn{border:0;background:var(--surface);width:42px;height:42px;border-radius:15px;display:grid;place-items:center;cursor:pointer}.icon-btn svg{width:19px;height:19px}.player-plan{font-size:12px;color:var(--muted);font-weight:600;max-width:55%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.player-content{width:min(100%,560px);margin:auto;display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 0 38px}.phase{font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--accent);margin-bottom:20px}.exercise{font-size:clamp(32px,9vw,54px);line-height:1.03;letter-spacing:-2px;font-weight:800;max-width:520px;margin:0}.instruction{min-height:24px;color:var(--muted);font-size:14px;margin:14px 0 35px}.timer-wrap{width:min(68vw,270px);aspect-ratio:1;position:relative;display:grid;place-items:center}.timer-svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}.timer-track,.timer-progress{fill:none;stroke-width:5}.timer-track{stroke:#292e28}.timer-progress{stroke:var(--accent);stroke-linecap:round;transition:stroke-dashoffset .22s linear}.time{font-size:clamp(54px,14vw,76px);font-weight:700;letter-spacing:-4px;font-variant-numeric:tabular-nums;line-height:1}.time-caption{font-size:11px;color:var(--muted);margin-top:7px;letter-spacing:.1em;text-transform:uppercase}.progress-label{font-size:12px;color:var(--muted);margin-top:28px}.progress-track{width:min(100%,300px);height:4px;border-radius:9px;background:#292e28;margin-top:11px;overflow:hidden}.progress-fill{height:100%;background:var(--accent);width:0%;transition:width .2s}.player-controls{width:min(100%,560px);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:28px;padding:12px 0 4px}.control{border:0;background:transparent;width:54px;height:54px;display:grid;place-items:center;cursor:pointer;color:var(--text)}.control svg{width:24px;height:24px}.control.primary{width:70px;height:70px;border-radius:24px;background:var(--accent);color:var(--accent-ink)}.control.primary svg{width:27px;height:27px;fill:currentColor;stroke-width:1.5}.control:disabled{opacity:.25;cursor:not-allowed}.player-bottom{width:min(100%,560px);margin:12px auto 0;display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.finish-mark{width:64px;height:64px;border-radius:22px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;margin-bottom:24px}.finish-mark svg{width:30px;height:30px}.finish-title{font-size:40px;font-weight:800;letter-spacing:-1.8px;margin:0}.finish-copy{font-size:14px;color:var(--muted);margin:12px 0 28px}.finish-actions{display:flex;gap:10px;width:100%;max-width:320px}.action{flex:1;border:0;border-radius:15px;padding:15px 16px;font-weight:700;cursor:pointer;background:var(--surface-2)}.action.primary{background:var(--accent);color:var(--accent-ink)}
+    .player{position:fixed;inset:0;z-index:10;background:var(--bg);display:none;flex-direction:column;padding:calc(18px + env(safe-area-inset-top)) 24px calc(22px + env(safe-area-inset-bottom));overflow:auto}.player.open{display:flex}.player-head{width:min(100%,560px);margin:0 auto;display:flex;align-items:center;justify-content:space-between;min-height:42px}.icon-btn{border:0;background:var(--surface);width:42px;height:42px;border-radius:15px;display:grid;place-items:center;cursor:pointer}.icon-btn svg{width:19px;height:19px}.player-plan{font-size:12px;color:var(--muted);font-weight:600;max-width:55%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.player-content{width:min(100%,560px);margin:auto;display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 0 38px}.phase{font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:700;color:var(--accent);margin-bottom:20px}.exercise{font-size:clamp(32px,9vw,54px);line-height:1.03;letter-spacing:-2px;font-weight:800;max-width:520px;margin:0}.instruction{min-height:24px;color:var(--muted);font-size:14px;margin:14px 0 35px}.timer-wrap{width:min(68vw,270px);aspect-ratio:1;position:relative;display:grid;place-items:center}.timer-svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}.timer-track,.timer-progress{fill:none;stroke-width:5}.timer-track{stroke:#292e28}.timer-progress{stroke:var(--accent);stroke-linecap:round;transition:stroke-dashoffset .22s linear}.time{font-size:clamp(54px,14vw,76px);font-weight:700;letter-spacing:-4px;font-variant-numeric:tabular-nums;line-height:1}.time-caption{font-size:11px;color:var(--muted);margin-top:7px;letter-spacing:.1em;text-transform:uppercase}.progress-label{font-size:12px;color:var(--muted);margin-top:28px}.progress-track{width:min(100%,300px);height:4px;border-radius:9px;background:#292e28;margin-top:11px;overflow:hidden}.progress-fill{height:100%;background:var(--accent);width:0%;transition:width .2s}.progress-times{width:min(100%,300px);display:flex;justify-content:space-between;margin-top:9px;color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}.player-controls{width:min(100%,560px);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:28px;padding:12px 0 4px}.control{border:0;background:transparent;width:54px;height:54px;display:grid;place-items:center;cursor:pointer;color:var(--text)}.control svg{width:24px;height:24px}.control.primary{width:70px;height:70px;border-radius:24px;background:var(--accent);color:var(--accent-ink)}.control.primary svg{width:27px;height:27px;fill:currentColor;stroke-width:1.5}.control:disabled{opacity:.25;cursor:not-allowed}.player-bottom{width:min(100%,560px);margin:12px auto 0;display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.finish-mark{width:64px;height:64px;border-radius:22px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;margin-bottom:24px}.finish-mark svg{width:30px;height:30px}.finish-title{font-size:40px;font-weight:800;letter-spacing:-1.8px;margin:0}.finish-copy{font-size:14px;color:var(--muted);margin:12px 0 28px}.finish-actions{display:flex;gap:10px;width:100%;max-width:320px}.action{flex:1;border:0;border-radius:15px;padding:15px 16px;font-weight:700;cursor:pointer;background:var(--surface-2)}.action.primary{background:var(--accent);color:var(--accent-ink)}
     @media(min-width:600px){.app{padding-top:34px}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.workout{min-height:205px}.player{padding-top:26px;padding-bottom:28px}}
     @media(max-width:360px){.app{padding-left:14px;padding-right:14px}.gallery{gap:9px}.workout{padding:13px;min-height:174px}.workout-name{font-size:16px}.workout-tag{right:39px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
@@ -53,13 +53,13 @@
       </div>
       <div class="progress-label" id="progress-label">Übung 1 von 1</div>
       <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      <div class="progress-times"><span id="elapsed">00:00</span><span id="remaining">00:00</span></div>
     </div>
     <div class="player-controls" id="player-controls">
       <button class="control" id="previous" aria-label="Vorherige Übung"><i data-lucide="skip-back"></i></button>
       <button class="control primary" id="toggle" aria-label="Pause"><i data-lucide="pause"></i></button>
       <button class="control" id="next" aria-label="Nächste Übung"><i data-lucide="skip-forward"></i></button>
     </div>
-    <div class="player-bottom"><span id="elapsed">00:00 vergangen</span><span id="remaining">--:-- gesamt</span></div>
   </section>
 
   <script>
@@ -67,7 +67,7 @@
     const gallery = $("gallery");
     const workouts = [];
     const icons = {activity:"activity",dumbbell:"dumbbell",flame:"flame",stretch:"person-standing",heart:"heart-pulse",zap:"zap",footprints:"footprints"};
-    let current = null, steps = [], stepIndex = 0, remaining = 0, duration = 0, deadline = 0, ticker = null, paused = false, sound = false, elapsedBefore = 0, totalDuration = 0;
+    let current = null, steps = [], stepIndex = 0, remaining = 0, duration = 0, deadline = 0, ticker = null, paused = false, sound = false, elapsedBefore = 0, totalDuration = 0, audioContext = null, lastCountdown = 0;
 
     const fmt = (seconds) => { const s=Math.max(0,Math.ceil(seconds)); return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0"); };
     const icon = (name) => icons[name] || "activity";
@@ -113,6 +113,17 @@
       if($("player").requestFullscreen){$("player").requestFullscreen().catch(()=>{});}
       showStep(true);
     }
+    function playTone(frequency=660, length=0.11, volume=0.045){
+      if(!sound)return;
+      try{
+        const AudioContextClass=window.AudioContext||window.webkitAudioContext;if(!AudioContextClass)return;
+        audioContext ||= new AudioContextClass();
+        if(audioContext.state==="suspended")audioContext.resume();
+        const oscillator=audioContext.createOscillator(),gain=audioContext.createGain();
+        oscillator.type="sine";oscillator.frequency.value=frequency;gain.gain.setValueAtTime(volume,audioContext.currentTime);gain.gain.exponentialRampToValueAtTime(0.001,audioContext.currentTime+length);
+        oscillator.connect(gain);gain.connect(audioContext.destination);oscillator.start();oscillator.stop(audioContext.currentTime+length);
+      }catch(error){console.warn("Audio konnte nicht abgespielt werden.",error);}
+    }
     function showStep(autostart=true){
       clearInterval(ticker);if(stepIndex>=steps.length){finishWorkout();return;}if(stepIndex<0)stepIndex=0;
       const step=steps[stepIndex];duration=step.duration;remaining=duration;paused=!autostart;deadline=Date.now()+remaining*1000;
@@ -122,27 +133,27 @@
       $("player-controls").style.display="flex";$("player-controls").style.justifyContent="center";
       $("previous").disabled=stepIndex===0;$("toggle").innerHTML=paused?'<i data-lucide="play"></i>':'<i data-lucide="pause"></i>';
       $("toggle").setAttribute("aria-label",paused?"Fortsetzen":"Pause");
-      lucide.createIcons();updateDisplay();if(autostart)runTicker();
+      lucide.createIcons();updateDisplay();lastCountdown=0;if(autostart){playTone(step.type==="rest"?520:740,0.1);runTicker();}
     }
-    function runTicker(){clearInterval(ticker);deadline=Date.now()+remaining*1000;ticker=setInterval(()=>{remaining=Math.max(0,(deadline-Date.now())/1000);updateDisplay();if(remaining<=0){elapsedBefore+=duration;stepIndex++;showStep(true);}},200);}
+    function runTicker(){clearInterval(ticker);deadline=Date.now()+remaining*1000;ticker=setInterval(()=>{remaining=Math.max(0,(deadline-Date.now())/1000);const whole=Math.ceil(remaining);if(whole<=3&&whole>0&&whole!==lastCountdown){lastCountdown=whole;playTone(whole===1?880:660,0.08);}updateDisplay();if(remaining<=0){elapsedBefore+=duration;stepIndex++;showStep(true);}},200);}
     function updateDisplay(){
       $("time").textContent=fmt(remaining);
       const circle=$("timer-progress"),circ=2*Math.PI*45;circle.style.strokeDasharray=circ;circle.style.strokeDashoffset=circ*(1-Math.max(0,remaining)/duration);
       const elapsed=elapsedBefore+(duration-remaining);$("progress-fill").style.width=Math.min(100,elapsed/totalDuration*100)+"%";
       $("progress-label").textContent="Übung "+(steps.slice(0,stepIndex+1).filter(x=>x.type==="exercise").length)+" von "+current.exercises.length;
-      $("elapsed").textContent=fmt(elapsed)+" vergangen";$("remaining").textContent=fmt(Math.max(0,totalDuration-elapsed))+" gesamt";
+      $("elapsed").textContent=fmt(elapsed);$("remaining").textContent=fmt(totalDuration);
     }
     function togglePause(){
       if(!current)return;
       if(paused){paused=false;runTicker();}else{remaining=Math.max(0,(deadline-Date.now())/1000);paused=true;clearInterval(ticker);updateDisplay();}
       $("toggle").innerHTML=paused?'<i data-lucide="play"></i>':'<i data-lucide="pause"></i>';$("toggle").setAttribute("aria-label",paused?"Fortsetzen":"Pause");lucide.createIcons();
     }
-    function nextStep(){if(!current)return;elapsedBefore+=duration-remaining;stepIndex++;showStep(true);}
+    function nextStep(){if(!current)return;elapsedBefore=steps.slice(0,stepIndex+1).reduce((sum,step)=>sum+step.duration,0);stepIndex++;showStep(true);}
     function previousStep(){if(!current||stepIndex===0)return;stepIndex--;elapsedBefore=steps.slice(0,stepIndex).reduce((s,x)=>s+x.duration,0);showStep(true);}
     function finishWorkout(){
       clearInterval(ticker);paused=true;$("phase").textContent="GESCHAFFT";$("exercise-name").textContent="Workout beendet";$("instruction").textContent="Du hast "+current.exercises.length+" Übungen abgeschlossen.";
       $("time").textContent="✓";$("time-caption").textContent="FERTIG";$("timer-progress").style.strokeDashoffset=0;$("progress-fill").style.width="100%";$("progress-label").textContent="100 % abgeschlossen";
-      $("player-controls").style.display="none";$("elapsed").textContent=fmt(totalDuration)+" trainiert";$("remaining").textContent="abgeschlossen";
+      $("player-controls").style.display="none";$("elapsed").textContent=fmt(totalDuration);$("remaining").textContent=fmt(totalDuration);playTone(784,0.13);setTimeout(()=>playTone(988,0.18),150);
       $("toggle").innerHTML='<i data-lucide="check"></i>';lucide.createIcons();
       const old=$("finish-actions");if(old)old.remove();
       const actions=document.createElement("div");actions.id="finish-actions";actions.className="finish-actions";actions.innerHTML='<button class="action" id="again">Nochmal</button><button class="action primary" id="done">Fertig</button>';$("player-content").append(actions);
@@ -154,7 +165,7 @@
       const actions=$("finish-actions");if(actions)actions.remove();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});
     }
     $("close-player").addEventListener("click",closePlayer);$("toggle").addEventListener("click",()=>{if(stepIndex<steps.length)togglePause();});$("next").addEventListener("click",nextStep);$("previous").addEventListener("click",previousStep);
-    $("sound-toggle").addEventListener("click",()=>{sound=!sound;$("sound-toggle").innerHTML=sound?'<i data-lucide="volume-2"></i>':'<i data-lucide="volume-x"></i>';lucide.createIcons();});
+    $("sound-toggle").addEventListener("click",()=>{sound=!sound;$("sound-toggle").innerHTML=sound?'<i data-lucide="volume-2"></i>':'<i data-lucide="volume-x"></i>';$("sound-toggle").setAttribute("aria-label",sound?"Ton ausschalten":"Ton einschalten");lucide.createIcons();if(sound)playTone(740,0.12);});
     document.addEventListener("visibilitychange",()=>{if(document.hidden&&!paused&&current){remaining=Math.max(0,(deadline-Date.now())/1000);clearInterval(ticker);paused=true;$("toggle").innerHTML='<i data-lucide="play"></i>';$("toggle").setAttribute("aria-label","Fortsetzen");lucide.createIcons();updateDisplay();}});
     document.addEventListener("keydown",e=>{if(!$("player").classList.contains("open"))return;if(e.code==="Space"){e.preventDefault();togglePause();}if(e.code==="ArrowRight")nextStep();if(e.code==="ArrowLeft")previousStep();if(e.code==="Escape"&&!document.fullscreenElement)closePlayer();});
     lucide.createIcons();loadWorkouts();
