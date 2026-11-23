@@ -4,11 +4,49 @@
   "description": "Ein ausgewogenes Ganzkörpertraining",
   "icon": "dumbbell",
   "exercises": [
-    { "name": "Squats", "instruction": "Kontrolliert absenken und aufrichten.", "duration": 40, "rest": 20 },
-    { "name": "Push-ups", "instruction": "Spann den Rumpf an und halte die Bewegung ruhig.", "duration": 30, "rest": 25 },
-    { "name": "Glute Bridges", "instruction": "Hüfte anheben, kurz halten und langsam senken.", "duration": 40, "rest": 20 },
-    { "name": "Plank", "instruction": "Halte Kopf, Rücken und Hüfte in einer Linie.", "duration": 30, "rest": 25 },
-    { "name": "Bird Dogs", "instruction": "Gegenüberliegenden Arm und Bein abwechselnd strecken.", "duration": 40, "rest": 20 },
-    { "name": "March in Place", "instruction": "Locker auf der Stelle gehen.", "duration": 45, "rest": 0 }
+    {
+      "name": "Squats",
+      "instruction": "Kontrolliert absenken und aufrichten.",
+      "duration": 40,
+      "rest": 20
+    },
+    {
+      "name": "Push-ups",
+      "instruction": "Spann den Rumpf an und halte die Bewegung ruhig.",
+      "duration": 30,
+      "rest": 25
+    },
+    {
+      "name": "Dumbbell Curls",
+      "instruction": "Hebe und senke die Hanteln kontrolliert im vorgegebenen Rhythmus.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 25
+    },
+    {
+      "name": "Glute Bridges",
+      "instruction": "Hüfte anheben, kurz halten und langsam senken.",
+      "duration": 40,
+      "rest": 20
+    },
+    {
+      "name": "Plank",
+      "instruction": "Halte Kopf, Rücken und Hüfte in einer Linie.",
+      "duration": 30,
+      "rest": 25
+    },
+    {
+      "name": "Bird Dogs",
+      "instruction": "Gegenüberliegenden Arm und Bein abwechselnd strecken.",
+      "duration": 40,
+      "rest": 20
+    },
+    {
+      "name": "March in Place",
+      "instruction": "Locker auf der Stelle gehen.",
+      "duration": 45,
+      "rest": 0
+    }
   ]
 }
