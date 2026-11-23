@@ -1,0 +1,14 @@
+{
+  "id": "mobility",
+  "name": "Mobility",
+  "description": "Sanfte Beweglichkeit und Mobilisation",
+  "icon": "stretch",
+  "exercises": [
+    { "name": "Cat Cow", "instruction": "Bewege die Wirbelsäule langsam im Atemrhythmus.", "duration": 45, "rest": 15 },
+    { "name": "Shoulder Rolls", "instruction": "Kreise die Schultern langsam nach hinten und vorn.", "duration": 30, "rest": 15 },
+    { "name": "Standing Side Stretch", "instruction": "Strecke dich abwechselnd zu beiden Seiten.", "duration": 40, "rest": 15 },
+    { "name": "Hip Circles", "instruction": "Kreise die Hüfte kontrolliert in beide Richtungen.", "duration": 40, "rest": 15 },
+    { "name": "Ankle Circles", "instruction": "Mobilisiere beide Fußgelenke nacheinander.", "duration": 30, "rest": 15 },
+    { "name": "Easy Forward Fold", "instruction": "Beuge dich nur so weit, wie es angenehm ist.", "duration": 30, "rest": 0 }
+  ]
+}
