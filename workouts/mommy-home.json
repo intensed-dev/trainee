@@ -1,0 +1,132 @@
+{
+  "id": "mommy-home",
+  "name": "Mommy – Zuhause",
+  "description": "Ganzkörpertraining ohne Fitnessstudio und ohne Geräte. 2–3-mal pro Woche mit mindestens einem Ruhetag zwischen den Einheiten. Starte mit 2 Sätzen und führe alle Bewegungen kontrolliert und schmerzfrei aus.",
+  "icon": "house",
+  "exercises": [
+    {
+      "name": "Aufwärmen",
+      "instruction": "5 Minuten locker auf der Stelle gehen, die Arme kreisen und die Gelenke sanft mobilisieren.",
+      "duration": 300,
+      "rest": 0
+    },
+    {
+      "name": "Kniebeugen – Satz 1/2",
+      "instruction": "Füße etwa schulterbreit. Hüfte nach hinten und unten bewegen, Knie in Richtung der Fußspitzen führen. Nur so tief gehen, wie es angenehm bleibt.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 4,
+      "rest": 60
+    },
+    {
+      "name": "Kniebeugen – Satz 2/2",
+      "instruction": "Gleichmäßig und kontrolliert auf- und abbewegen. Bei Bedarf eine stabile Sitzfläche als Orientierung nutzen.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 4,
+      "rest": 60
+    },
+    {
+      "name": "Glute Bridge – Satz 1/2",
+      "instruction": "Auf den Rücken legen, Knie aufstellen und das Becken anheben. Oben kurz halten, ohne ins Hohlkreuz zu drücken.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Glute Bridge – Satz 2/2",
+      "instruction": "Becken kontrolliert heben und senken. Die Bewegung kommt aus der Hüfte.",
+      "type": "reps",
+      "reps": 12,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Rückwärts-Ausfallschritte – Satz 1/2",
+      "instruction": "Abwechselnd einen Schritt nach hinten machen und beide Knie leicht beugen. Bei Bedarf an einer stabilen Wand festhalten.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 4,
+      "rest": 75
+    },
+    {
+      "name": "Rückwärts-Ausfallschritte – Satz 2/2",
+      "instruction": "8 Wiederholungen pro Bein, langsam und mit sicherem Stand. Alternativ kleinere Schritte machen.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 4,
+      "rest": 75
+    },
+    {
+      "name": "Liegestütze an der Wand – Satz 1/2",
+      "instruction": "Hände an eine stabile Wand setzen, Körper gerade halten und die Brust kontrolliert zur Wand bewegen. Je weiter die Füße von der Wand entfernt sind, desto anspruchsvoller wird es.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 4,
+      "rest": 60
+    },
+    {
+      "name": "Liegestütze an der Wand – Satz 2/2",
+      "instruction": "Bauch leicht anspannen und ohne Schwung drücken. Nur so viele Wiederholungen machen, wie sauber möglich sind.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 4,
+      "rest": 60
+    },
+    {
+      "name": "Bauchlage: W-Heben – Satz 1/2",
+      "instruction": "Auf den Bauch legen, Arme angewinkelt wie ein W halten und die Hände sowie Ellenbogen leicht vom Boden heben. Nacken entspannt lassen; nicht ruckartig bewegen.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bauchlage: W-Heben – Satz 2/2",
+      "instruction": "Schulterblätter sanft zueinander führen und die Arme kontrolliert wieder ablegen.",
+      "type": "reps",
+      "reps": 10,
+      "secondsPerRep": 3,
+      "rest": 60
+    },
+    {
+      "name": "Bird Dog – Satz 1/2",
+      "instruction": "Im Vierfüßlerstand einen Arm und das gegenüberliegende Bein ausstrecken. Becken möglichst ruhig halten und die Seite wechseln.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 4,
+      "rest": 45
+    },
+    {
+      "name": "Bird Dog – Satz 2/2",
+      "instruction": "8 Wiederholungen pro Seite. Langsam arbeiten und den Rücken möglichst neutral halten.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 4,
+      "rest": 45
+    },
+    {
+      "name": "Dead Bug – Satz 1/2",
+      "instruction": "Auf den Rücken legen, Arme nach oben und Beine angewinkelt halten. Abwechselnd einen Arm und das gegenüberliegende Bein langsam absenken. Rücken angenehm stabil halten.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 4,
+      "rest": 45
+    },
+    {
+      "name": "Dead Bug – Satz 2/2",
+      "instruction": "8 Wiederholungen pro Seite. Den Bewegungsradius verkleinern, falls der Rücken sich unangenehm anfühlt.",
+      "type": "reps",
+      "reps": 8,
+      "secondsPerRep": 4,
+      "rest": 45
+    },
+    {
+      "name": "Lockeres Abwärmen",
+      "instruction": "3 Minuten locker gehen und Beine, Brust sowie Schultern sanft bewegen. Dehnen nur angenehm und ohne Ziehen erzwingen.",
+      "duration": 180,
+      "rest": 0
+    }
+  ]
+}
