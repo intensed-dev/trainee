@@ -148,13 +148,13 @@
     }
     function togglePause(){
       if(!current)return;
-      if(paused){paused=false;runTicker();}else{remaining=Math.max(0,(deadline-Date.now())/1000);paused=true;clearInterval(ticker);updateDisplay();}
+      const activeStep=steps[stepIndex];if(activeStep?.type==="reps"&&!activeStep.autoCadence){paused=!paused;}else if(paused){paused=false;runTicker();}else{remaining=Math.max(0,(deadline-Date.now())/1000);paused=true;clearInterval(ticker);updateDisplay();}
       $("toggle").innerHTML=paused?'<i data-lucide="play"></i>':'<i data-lucide="pause"></i>';$("toggle").setAttribute("aria-label",paused?"Fortsetzen":"Pause");lucide.createIcons();
     }
     function nextStep(){if(!current)return;elapsedBefore=steps.slice(0,stepIndex+1).reduce((sum,step)=>sum+step.duration,0);stepIndex++;showStep(true);}
     function previousStep(){if(!current||stepIndex===0)return;stepIndex--;elapsedBefore=steps.slice(0,stepIndex).reduce((s,x)=>s+x.duration,0);showStep(true);}
     function finishWorkout(){
-      clearInterval(ticker);paused=true;$("phase").textContent="GESCHAFFT";$("exercise-name").textContent="Workout beendet";$("instruction").textContent="Du hast "+current.exercises.length+" Übungen abgeschlossen.";
+      clearInterval(ticker);paused=true;$("timer-svg").style.display="block";$("time").style.display="block";$("time-caption").style.display="block";$("rep-display").style.display="none";$("phase").textContent="GESCHAFFT";$("exercise-name").textContent="Workout beendet";$("instruction").textContent="Du hast "+current.exercises.length+" Übungen abgeschlossen.";
       $("time").textContent="✓";$("time-caption").textContent="FERTIG";$("timer-progress").style.strokeDashoffset=0;$("progress-fill").style.width="100%";$("progress-label").textContent="100 % abgeschlossen";
       $("player-controls").style.display="none";$("elapsed").textContent=fmt(totalDuration);$("remaining").textContent=fmt(totalDuration);playTone(784,0.13);setTimeout(()=>playTone(988,0.18),150);
       $("toggle").innerHTML='<i data-lucide="check"></i>';lucide.createIcons();
